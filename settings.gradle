@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven{
+            url "https://www.jitpack.io"
+        }
+        maven { url 'http://jcenter.bintray.com' }
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url "https://www.jitpack.io"
+        }
+            google()
+        mavenCentral()
+        gradlePluginPortal()
+
+    }
+}
+
+rootProject.name = "College App"
+include ':app'
